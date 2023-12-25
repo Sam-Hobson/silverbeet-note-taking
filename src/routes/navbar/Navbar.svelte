@@ -10,7 +10,7 @@
         <span class="flex justify-start items-center w-full h-full">
 
             <label for="voice-search" class="sr-only">Search</label>
-            <span class="flex relative left-5 w-80 h-3/5 rounded-3xl pearl-gradient shadow justify-center align-middle overflow-hidden">
+            <span class="flex relative left-5 w-48 lg:w-80 h-3/5 rounded-3xl pearl-gradient shadow justify-center align-middle overflow-hidden">
 
                 <input type="text" class="w-full h-full px-2 outline-none bg-transparent" placeholder="Search for your notes..." required>
                 <svg class="w-4 h-full me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
@@ -23,7 +23,7 @@
 
         </span>
 
-        <span class="flex justify-center items-center whitespace-nowrap w-auto h-full fancy-font text-3xl">
+        <span class="hidden sm:flex justify-center items-center whitespace-nowrap w-auto h-full fancy-font text-3xl px-4">
         Silverbeet notes
         </span>
 
@@ -72,7 +72,7 @@
     }
 
     .navbar-menu-option-right {
-        @apply pr-16 w-auto font-sans text-lg text-gray-700
+        @apply pr-16 w-auto font-sans text-lg text-gray-700 whitespace-nowrap
     }
 
     .gray-transparent-background {
