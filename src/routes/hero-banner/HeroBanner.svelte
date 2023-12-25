@@ -5,15 +5,22 @@
 
 </script>
 
-<!-- Banner colour: #ffeae1 -->
 
 <div class="w-screen h-108 flex flex-row">
 
-    <img src={left.default} class="w-auto h-full" />
+    <img src={left.default} class="hidden sm:block w-auto h-full" alt="Decritive plants" />
 
-    <div class="w-full h-full banner-background"></div>
+    <div class="flex w-full h-full banner-background">
+        <span class="flex h-full w-full justify-center items-center fancy-font text-6xl text-center xl:text-left">
+        Welcome to the<br> Silverbeet notes app...
+        </span>
 
-    <img src={right.default} class="w-auto h-full" />
+        <span class="hidden xl:flex h-full w-full justify-center items-center text-4xl font-mono leading-relaxed">
+        So far you've<br>created _ notes,<br>with _ total words.
+        </span>
+    </div>
+
+    <img src={right.default} class="hidden sm:block w-auto h-full" alt="Decritive plants" />
 
 </div>
 
@@ -26,6 +33,10 @@
 
     .banner-background {
         background-color: #ffeae1;
+    }
+
+    .fancy-font {
+        font-family: 'Parisienne', cursive;
     }
 
 </style>
