@@ -10,31 +10,27 @@
 <Navbar />
 <HeroBanner numNotes={numNotes} wordCount={wordCount} />
 
+
 {#if numNotes === 0 }
 
     <div class="flex w-screen h-128 justify-center">
 
         <div class="flex flex-col h-full w-auto justify-center items-center">
 
-            <!-- <span class="text-mega-plus font-light pearl-gradient-dark-text leading-none"> -->
-            <!-- + -->
-            <!-- </span> -->
-
-            <span class="font-mono text-2xl text-gray-800">
-            Create your first note by clicking the
+            <span class="font-mono text-2xl text-gray-800 text-center">Create your first note by clicking the</span>
+            <span class="fancy-font text-5xl leading-loose pearl-gradient-dark-text text-center">
+                <a href="/">
+                New note
+                </a>
             </span>
-            <span class="fancy-font text-5xl leading-loose pearl-gradient-dark-text">
-            New note
-            </span>
-            <span class="font-mono text-2xl text-gray-800">
-            button
-            </span>
+            <span class="font-mono text-2xl text-gray-800 text-center">button</span>
 
         </div>
 
     </div>
 
 {:else}
+
 {/if}
 
 
