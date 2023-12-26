@@ -14,14 +14,20 @@
 
     <div class="flex w-screen h-128 justify-center">
 
-        <div class="flex flex-col h-full w-auto items-center">
+        <div class="flex flex-col h-full w-auto justify-center items-center">
 
-            <span class="text-mega-plus font-light pearl-gradient-dark-text">
-            +
+            <!-- <span class="text-mega-plus font-light pearl-gradient-dark-text leading-none"> -->
+            <!-- + -->
+            <!-- </span> -->
+
+            <span class="font-mono text-2xl text-gray-800">
+            Create your first note by clicking the
             </span>
-
-            <span>
-            Dog
+            <span class="fancy-font text-5xl leading-loose pearl-gradient-dark-text">
+            New note
+            </span>
+            <span class="font-mono text-2xl text-gray-800">
+            button
             </span>
 
         </div>
@@ -52,24 +58,34 @@
     }
 
     :global(.pearl-gradient-dark) {
-        background: rgb(132,153,255);
-        background: linear-gradient(90deg, rgba(132,153,255,1) 0%, rgba(207,255,255,1) 55%, rgba(251,169,255,1) 100%); }
+        @apply pearl-gradient-dark_
+    }
 
     :global(.pearl-gradient-light) {
-         background: rgb(231,235,255);
-         background: linear-gradient(90deg, rgba(231,235,255,1) 0%, rgba(228,255,255,1) 44%, rgba(254,231,255,1) 100%);
+        @apply pearl-gradient-light_
      }
 
      :global(.pearl-gradient-light-text) {
-         @apply pearl-gradient-light text-transparent;
+         @apply pearl-gradient-light_ text-transparent;
          background-clip: text;
      }
 
      :global(.pearl-gradient-dark-text) {
-         @apply pearl-gradient-dark text-transparent;
+         @apply pearl-gradient-dark_ text-transparent;
          background-clip: text;
      }
 
+
+
+    .pearl-gradient-dark_ {
+        background: rgb(71,102,255);
+        background: linear-gradient(90deg, rgba(71,102,255,1) 0%, rgba(121,206,255,1) 55%, rgba(249,124,255,1) 100%);
+    }
+
+     .pearl-gradient-light_ {
+         background: rgb(231,235,255);
+         background: linear-gradient(90deg, rgba(231,235,255,1) 0%, rgba(228,255,255,1) 44%, rgba(254,231,255,1) 100%);
+     }
 
     .text-mega-plus {
         font-size: 12rem;
